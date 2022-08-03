@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziames</title>
-    <link rel="stylesheet" href="./app/assets/styles.css">
+    <link rel="stylesheet" href="./src/assets/styles.css">
+    <script defer src="/src/index.js" type="module"></script>   
 
 </head>
+
 <body>
-    <main id="root"></main>
-    <script src="/app/index.js" type="module"></script>
+    <main id="root">
+        <div id="contenedor"></div>>
+            <fieldset>
+                <legend>
+                    Peliculas
+                </legend>
+                <label for="input-nombre">Nombre</label>
+                <input type="text" id="input-nombre" name="input-nombre">
+
+                <label for="input-director">Director</label>
+                <input type="text" id="input-director" name="input-director">
+
+                <label for="input-clasificacion">Clasificacion</label>
+                <input type="text" id="input-clasificacion" name="input-director">
+
+                <button id="btnConsultar" type="button" >Consultar</button>
+                <button id="btnEnviar" type="button">Enviar</button>
+                <button id="btnModificar" type="button">Modificar</button>
+                <button id="btnEliminar" type="button">Eliminar</button>
+
+                <div id="contenedor-salida">
+                    <ol id="lista"></ol>
+                </div>
+            </fieldset>
+        </div>
+    </main>
 </body>
+
 </html>
